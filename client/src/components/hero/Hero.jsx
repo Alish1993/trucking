@@ -30,12 +30,13 @@ export default function Hero({ hero, setHero, setPlayStatus, playStatus, heroDat
             className={hero === 2 ? 'hero-dot orange' : 'hero-dot'}
           ></li>
         </ul>
-        <ul className="hero-play">
-          <li onClick={() => setPlayStatus(!playStatus)}>
-            <img src={playStatus ? pause : play} alt="Play" />
-            <p>{playStatus ? 'Pause' : 'Play'}</p>
-          </li>
-        </ul>
+        <div className="hero-play">
+          <img
+            onClick={() => setPlayStatus(!playStatus)}
+            src={playStatus ? pause : play}
+            alt="Play"
+          />
+        </div>
       </div>
     </div>
   );

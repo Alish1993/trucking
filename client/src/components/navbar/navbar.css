@@ -4,6 +4,7 @@
   align-items: center;
   margin: 40px 120px;
   color: white;
+  background-color: transparent; /* Прозрачный фон */
 }
 
 .nav-logo {
@@ -20,9 +21,21 @@
   gap: 90px;
 }
 
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #f79569; /* Цвет ссылки при наведении */
+}
+
 .nav-contact {
   border-radius: 50px;
   padding: 10px 38px;
-  background: #fff;
-  color: #262626;
+  /* background: transparent; Прозрачный фон */
+  color: white; /* Белый текст по умолчанию */
+  font-weight: 600; /* Жирный текст */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
